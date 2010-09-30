@@ -2,7 +2,6 @@
  node-cssmin - a simple css minifier
 */
 
-
 exports.cssmin = cssmin;
 
 function cssmin(input, linebreak) {
