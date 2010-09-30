@@ -1,7 +1,9 @@
 This is a node module that minimize CSS files (cssmin).
 
-I used most rules for minimizing from Isaac Z. Schlueter cssmin git
+I used most rules for minimizing from Isaac Schlueter cssmin git
 	http://github.com/isaacs/cssmin
+	
+And I also used YUICompressor source code for CSS minification.
 
 ------------------------------------------------------------------------------
 
