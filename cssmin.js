@@ -40,11 +40,11 @@ function cssmin(input, linebreak) {
 	/** 
 	 * Combine multiple 0 into one
 	 */
-		output = output.replace(/:0 0 0 0(;|})/, ":0$1");
-		output = output.replace(/:0 0 0(;|})/, ":0$1");
-		output = output.replace(/:0 0(;|})/, ":0$1");
+	output = output.replace(/:0 0 0 0(;|})/, ":0$1");
+	output = output.replace(/:0 0 0(;|})/, ":0$1");
+	output = output.replace(/:0 0(;|})/, ":0$1");
 	/* Restore background-position:0; with background-position:0 0; */
-		output =output.replace(/background-position:0(;|})/, "background-position:0 0$1");
+	output =output.replace(/background-position:0(;|})/, "background-position:0 0$1");
 
 	/**
 	 * Remove multiple semi-colon in a row
