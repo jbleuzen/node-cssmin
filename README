@@ -1,9 +1,5 @@
 This is a node module that minimize CSS files (cssmin).
-
-I used most rules for minimizing from Isaac Schlueter cssmin git
-	http://github.com/isaacs/cssmin
-	
-And I also used YUICompressor source code for CSS minification.
+It uses most of YUICompressor rules to minify CSS files (ie Not all rules are implemented)
 
 ------------------------------------------------------------------------------
 
@@ -11,10 +7,10 @@ The module export the cssmin function, you can use it with :
 
 	var cssmin = require('cssmin').cssmin;
 	
-The function take one argument :
+The function take two arguments :
 	
 	input -> the CSS content you want to minimize
-	
+	linecreak -> adds a return carriage after each block for debug purpose or readability...
 	
 Example :
 
@@ -26,10 +22,6 @@ var css = fs.readFileSync("/Any/Random/CSS/File.css", encoding='utf8');
 
 var min = cssmin(css);
 
-puts("BEFORE");
-puts(css);
-
-puts("AFTER");
 puts(min);
 	
 
