@@ -10,7 +10,7 @@ The module export the cssmin function, you can use it with :
 The function take two arguments :
 	
 	input -> the CSS content you want to minimize
-	linecreak -> adds a return carriage after each block for debug purpose or readability...
+	linebreak -> (true, false) adds a return carriage after each block for debug purpose or readability...
 	
 Example :
 
