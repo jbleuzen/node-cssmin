@@ -1,0 +1,10 @@
+{
+	"name": "cssmin",
+	"version": "0.1.0",
+	"description": "A simple CSS File minifier",
+	"main": "cssmin",
+	"author" : {
+		"name" : "Johan Bleuzen",
+		"url" : "http://blog.johanbleuzen.fr"
+	}
+}
