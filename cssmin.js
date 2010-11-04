@@ -4,16 +4,18 @@
 
 exports.cssmin = cssmin;
 
-function cssmin(input, linebreak) {
+function cssmin(data, linebreak) {
 
 	if(linebreak == null){
 		linebreak = 0;
 	}
 
+	var input = String(data);
+
 	/*
 	 * Normalize whitespace by removing \t, \n, ... 
 	 */
-	output = input.replace(/\s+/g, " ");
+	var output = input.replace(/\s+/g, " ");
 	
 	/**
 	 * Remove comments from source
