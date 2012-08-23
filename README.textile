@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/jbleuzen/node-cssmin.png)](http://travis-ci.org/jbleuzen/node-cssmin)
 h2. Description
 
 This is a node.js module that minimize CSS files (cssmin).
