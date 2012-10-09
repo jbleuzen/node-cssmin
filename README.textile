@@ -6,7 +6,9 @@ For more informations about YUICompressor -> https://github.com/yui/yuicompresso
 
 h2. Installation
 
-You can either download the plugin and unzip it into to your project folder or you can use npm to install the node-cssmin package.
+You can either download the plugin and unzip it into to your project folder or you can use npm to install the cssmin package.
+
+pre.. npm -g i cssmin
 
 h2. Usage
 
