@@ -30,4 +30,5 @@ var min = cssmin(css);
 puts(min);
 
 h2. License
-cssmun is released under a BSD license.
+
+cssmin is released under a "BSD License":http://opensource.org/licenses/bsd-license.php.
