@@ -28,3 +28,6 @@ cssmin = require('./cssmin').cssmin;
 var css = fs.readFileSync("/Any/Random/CSS/File.css", encoding='utf8');
 var min = cssmin(css);
 puts(min);
+
+h2. License
+cssmun is released under a BSD license.
