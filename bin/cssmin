@@ -1,21 +1,34 @@
 #!/usr/bin/env node
 // -*- js -*-
 
-var args = process.argv.slice(2);
+var
+fs = require("fs"),
+cssmin = require("../cssmin").cssmin,
+optimist = require("optimist");
+
+optimist
+    .usage("Usage: $0 [options] [<file>]\n\nIf no file is specified, assume stdin for input.")
+    .string("h")
+    .alias("h", "help")
+    .describe("help", "Print usage info"),
+argv = optimist.argv;
 
 function squeeze_out(css_in) {
-    process.stdout.write( require("cssmin").cssmin(css_in) );
+    process.stdout.write(cssmin(css_in));
 }
 
-if (args.length) {
-    require("fs").readFile( args[0], "utf8", function(err, css_in) {
+if (argv.h || argv.help) {
+    optimist.showHelp();
+}
+else if (argv._.length > 0) {
+    fs.readFile(argv._[0], "utf8", function(err, css_in) {
         if (err) {
             throw err;
         }
         else {
             squeeze_out(css_in);
         }
-    } );
+    });
 }
 else {
     var stdin = process.openStdin();
