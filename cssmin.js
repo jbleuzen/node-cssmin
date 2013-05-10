@@ -23,7 +23,7 @@
 * by Yahoo! Inc. under the BSD (revised) open source license.
 */
 
-exports.cssmin = cssmin;
+exports = cssmin;
 
 function cssmin(css, linebreakpos) {
 
