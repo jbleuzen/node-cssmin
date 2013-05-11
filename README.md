@@ -1,34 +1,41 @@
-h2. Description
+## Description
 
 This is a node.js module that minimize CSS files (cssmin).
 It uses a port of YUICompressor made in JavaScript by Stoyan Stefanov based on Isaac Schlueter work.
-For more informations about YUICompressor -> https://github.com/yui/yuicompressor
+[For more informations about YUICompressor](https://github.com/yui/yuicompressor)
 
-h2. Installation
+## Installation
 
 You can either download the plugin and unzip it into to your project folder or you can use npm to install the cssmin package.
 
-pre.. npm -g i cssmin
+```
+npm -g i cssmin
+```
 
-h2. Usage
+## Usage
 
 The module exports the cssmin function, so you can use it with : 
 
-pre. var cssmin = require('cssmin').cssmin;
+```
+var cssmin = require('cssmin').cssmin;
+```
 
 The function cssmin takes two arguments :
+
 * input : the CSS content you want to minimize.
 * linebreakpos : the number of characters before the end of the line. If empty, the output will have only one line.
 	
 Example :
 
-pre.. var puts = require('util').puts,
+```
+var puts = require('util').puts,
 fs = require('fs'),
 cssmin = require('./cssmin').cssmin;
 var css = fs.readFileSync("/Any/Random/CSS/File.css", encoding='utf8');
 var min = cssmin(css);
 puts(min);
+```
 
-h2. License
+## License
 
 cssmin is released under a "BSD License":http://opensource.org/licenses/bsd-license.php.
