@@ -30,7 +30,7 @@ Example :
 ```
 var puts = require('util').puts,
 fs = require('fs'),
-cssmin = require('./cssmin').cssmin;
+cssmin = require('./cssmin');
 var css = fs.readFileSync("/Any/Random/CSS/File.css", encoding='utf8');
 var min = cssmin(css);
 puts(min);
