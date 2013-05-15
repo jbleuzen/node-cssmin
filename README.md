@@ -17,7 +17,7 @@ npm -g i cssmin
 The module exports the cssmin function, so you can use it with : 
 
 ```
-var cssmin = require('cssmin').cssmin;
+var cssmin = require('cssmin');
 ```
 
 The function cssmin takes two arguments :
@@ -30,7 +30,7 @@ Example :
 ```
 var puts = require('util').puts,
 fs = require('fs'),
-cssmin = require('./cssmin').cssmin;
+cssmin = require('./cssmin');
 var css = fs.readFileSync("/Any/Random/CSS/File.css", encoding='utf8');
 var min = cssmin(css);
 puts(min);
