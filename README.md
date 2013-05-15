@@ -17,7 +17,7 @@ npm -g i cssmin
 The module exports the cssmin function, so you can use it with : 
 
 ```
-var cssmin = require('cssmin').cssmin;
+var cssmin = require('cssmin');
 ```
 
 The function cssmin takes two arguments :
