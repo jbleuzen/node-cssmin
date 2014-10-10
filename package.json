@@ -1,6 +1,6 @@
 {
 	"name": "cssmin",
-	"version": "0.4.1",
+	"version": "0.4.2",
 	"description": "A simple CSS minifier that uses a port of YUICompressor in JS",
 	"main": "cssmin",
 	"bin": {
@@ -13,13 +13,5 @@
 	"repository": {
 		"type": "git",
 		"url": "http://github.com/jbleuzen/node-cssmin"
-	},
-	"scripts": {
-		"test": "node ./tests/launcher.js"
-	},
-	"devDependencies": {
-		"mocha": "~1.9.0",
-		"vows": "~0.7.0",
-		"assert": "~0.4.9"
 	}
 }
