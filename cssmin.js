@@ -120,6 +120,12 @@ function cssmin(css, linebreakpos) {
     css = css.replace(/(^|\})(([^\{:])+:)+([^\{]*\{)/g, function (m) {
         return m.replace(/\:/g, "___YUICSSMIN_PSEUDOCLASSCOLON___");
     });
+
+    // Preserve spaces in calc expressions
+    css = css.replace(/calc\s*\(\s*(.*?)\s*\)/g, function (m, c) {
+       return m.replace(c, c.replace(/\s+/g, "___YUICSSMIN_SPACE_IN_CALC___"));
+    });
+
     css = css.replace(/\s+([!{};:>+\(\)\],])/g, '$1');
     css = css.replace(/___YUICSSMIN_PSEUDOCLASSCOLON___/g, ":");
 
@@ -141,6 +147,9 @@ function cssmin(css, linebreakpos) {
 
     // Remove the spaces after the things that should not have spaces after them.
     css = css.replace(/([!{}:;>+\(\[,])\s+/g, '$1');
+
+    // Restore preserved spaces in calc expressions
+    css = css.replace(/___YUICSSMIN_SPACE_IN_CALC___/g, " ");
 
     // remove unnecessary semicolons
     css = css.replace(/;+\}/g, "}");
