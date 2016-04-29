@@ -143,7 +143,7 @@ function cssmin(css, linebreakpos) {
     // Put the space back in some cases, to support stuff like
     // @media screen and (-webkit-min-device-pixel-ratio:0){
     // or @supports not (display: flex)
-    css = css.replace(/[^\B:](and|not)\(/gi, "$1 (");
+    css = css.replace(/([^\B:])(and|not)\(/gi, "$1$2 (");
 
 
     // Remove the spaces after the things that should not have spaces after them.
