@@ -13,6 +13,6 @@
 	"license": "BSD-2-Clause",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/jbleuzen/node-cssmin"
+		"url": "http://github.com/mixartemev/node-cssmin"
 	}
 }
