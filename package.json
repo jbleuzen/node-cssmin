@@ -1,18 +1,24 @@
 {
-	"name": "cssmin",
-	"version": "0.4.3",
-	"description": "A simple CSS minifier that uses a port of YUICompressor in JS",
-	"main": "cssmin",
-	"bin": {
-		"cssmin": "./bin/cssmin"
-	},
-	"author": {
-		"name": "Johan Bleuzen",
-		"url": "http://blog.johanbleuzen.fr"
-	},
-	"license": "BSD-2-Clause",
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/jbleuzen/node-cssmin"
-	}
+  "name": "cssmin-cli",
+  "version": "0.0.5",
+  "description": "A simplest CSS minifier that uses a port of YUICompressor in JS",
+  "main": "cssmin",
+  "bin": {
+    "cssmin": "./bin/cssmin"
+  },
+  "author": "Johan Bleuzen (http://blog.johanbleuzen.fr)",
+  "license": "BSD-2-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://git@github.com/mixartemev/node-cssmin"
+  },
+  "bugs": {
+    "url": "https://github.com/mixartemev/node-cssmin/issues"
+  },
+  "homepage": "https://github.com/mixartemev/node-cssmin#readme",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
