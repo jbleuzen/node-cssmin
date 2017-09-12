@@ -11,20 +11,20 @@ function squeeze_out(css_in) {
 }
 
 if (arg.length) {
-	arg = arg[0].replace(/^(-)+/,'');
-	switch(arg) {
+    var from = arg[0].replace(/^(-)+/,'');
+    switch(from) {
 		case 'h' : showHelp();
 		break;
 		case 'help' : showHelp();
 		break;
 		default :
-		fs.readFile( arg, "utf8", function(err, css_in) {
-			if (err) {
-				util.puts("Invalid file : "+ arg);
-				process.exit(1);
-			}
-            else if (args.length > 1){
-                fs.writeFileSync(args[1], cssmin(css_in));
+			fs.readFile( from, "utf8", function(err, css_in) {
+				if (err) {
+					util.puts("Invalid file : "+ from);
+					process.exit(1);
+				}
+				else if (arg.length > 1){
+					fs.writeFileSync(arg[1], cssmin(css_in));
             }
 			else {
 				squeeze_out(css_in);
