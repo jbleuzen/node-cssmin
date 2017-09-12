@@ -1,6 +1,8 @@
 ## Description
 
-This is a node.js module that minimize CSS files (cssmin).
+**It's a fork of [jbleuzen/node-cssmin](https://github.com/jbleuzen/node-cssmin) with ability to generate result in file from cli.**
+
+This is a nodejs module that minimize CSS files (cssmin).
 It uses a port of YUICompressor made in JavaScript by Stoyan Stefanov based on Isaac Schlueter work.
 [For more informations about YUICompressor](https://github.com/yui/yuicompressor)
 

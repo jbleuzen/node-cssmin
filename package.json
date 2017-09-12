@@ -1,7 +1,7 @@
 {
-	"name": "cssmin",
-	"version": "0.4.3",
-	"description": "A simple CSS minifier that uses a port of YUICompressor in JS",
+	"name": "cssmin-cli",
+	"version": "0.0.1",
+	"description": "A simplest CSS minifier that uses a port of YUICompressor in JS",
 	"main": "cssmin",
 	"bin": {
 		"cssmin": "./bin/cssmin"
